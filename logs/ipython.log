@@ -1,0 +1,29 @@
+2025-05-09 13:56:39,277 INFO ipython === bench console session ===
+2025-05-09 13:56:39,277 INFO ipython # Get the Administrator user
+admin = frappe.get_doc("User", "Administrator")
+
+# Check current email
+print(admin.email)
+
+# Update email if needed
+admin.email = "ghugepratik80@gmail.com"
+admin.save()
+
+# Enable login with email and username
+settings = frappe.get_doc("System Settings", "System Settings")
+settings.allow_login_using_email = 1
+settings.allow_login_using_username = 1
+settings.save()
+
+# Commit changes
+frappe.db.commit()
+
+# Reset password
+frappe.utils.password.update_password("Administrator", "1")
+2025-05-09 13:56:39,278 INFO ipython === session end ===
+2025-05-09 14:22:18,819 INFO ipython === bench console session ===
+2025-05-09 14:22:18,828 INFO ipython import frappe
+from frappe.utils.password import update_password
+
+update_password('Administrator', '2')
+2025-05-09 14:22:18,828 INFO ipython === session end ===

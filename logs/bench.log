@@ -1,0 +1,200 @@
+2025-05-04 00:21:54,039 DEBUG cd frappe-bench && python3 -m venv env
+2025-05-04 00:21:59,597 DEBUG cd frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-05-04 00:22:03,478 DEBUG cd frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-05-04 00:22:06,987 LOG Getting frappe
+2025-05-04 00:22:06,988 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2025-05-04 00:22:32,594 LOG Installing frappe
+2025-05-04 00:22:32,595 DEBUG cd /home/pratik/frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/pratik/frappe-bench/apps/frappe 
+2025-05-04 00:23:44,840 DEBUG cd /home/pratik/frappe-bench/apps/frappe && yarn install --check-files
+2025-05-04 00:23:57,583 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 00:23:58,002 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 00:23:58,002 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-05-04 00:23:58,002 DEBUG cd frappe-bench && bench build
+2025-05-04 00:23:58,228 INFO /home/pratik/.local/bin/bench build
+2025-05-04 00:24:40,308 LOG setting up backups
+2025-05-04 00:24:40,324 LOG backups were set up
+2025-05-04 00:24:40,325 INFO Bench frappe-bench initialized
+2025-05-04 00:24:40,881 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:24:59,716 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:25:08,934 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:28:07,960 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:28:25,416 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:28:41,245 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:28:55,082 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:29:16,943 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:31:12,259 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:32:37,041 INFO /home/pratik/.local/bin/bench new-site frappeapp.com
+2025-05-04 00:34:29,661 INFO /home/pratik/.local/bin/bench get-app erpnext --branch version-15
+2025-05-04 00:34:31,348 LOG Getting erpnext
+2025-05-04 00:34:31,348 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2025-05-04 00:34:48,741 LOG Installing erpnext
+2025-05-04 00:34:48,742 DEBUG cd /home/pratik/frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/pratik/frappe-bench/apps/erpnext 
+2025-05-04 00:35:01,129 DEBUG cd /home/pratik/frappe-bench/apps/erpnext && yarn install --check-files
+2025-05-04 00:35:01,820 DEBUG bench build --app erpnext
+2025-05-04 00:35:02,050 INFO /home/pratik/.local/bin/bench build --app erpnext
+2025-05-04 00:35:07,659 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 00:35:08,027 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 00:35:08,027 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-05-04 00:35:08,609 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:35:08,924 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app erpnext
+2025-05-04 00:37:57,442 INFO /home/pratik/.local/bin/bench get-app https://github.com/frappe/ecommerce.git
+2025-05-04 00:37:57,458 LOG Getting ecommerce
+2025-05-04 00:37:57,458 DEBUG cd ./apps && git clone https://github.com/frappe/ecommerce.git  --depth 1 --origin upstream
+2025-05-04 00:38:42,684 WARNING cd ./apps && git clone https://github.com/frappe/ecommerce.git  --depth 1 --origin upstream executed with exit code 128
+2025-05-04 00:38:42,685 WARNING /home/pratik/.local/bin/bench get-app https://github.com/frappe/ecommerce.git executed with exit code 1
+2025-05-04 00:38:43,696 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:38:43,983 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app ecommerce
+2025-05-04 00:43:46,589 INFO /home/pratik/.local/bin/bench get-app webshop https://github.com/frappe/webshop.git
+2025-05-04 00:43:46,604 LOG Getting webshop
+2025-05-04 00:43:46,605 DEBUG cd ./apps && git clone https://github.com/frappe/webshop.git  --depth 1 --origin upstream
+2025-05-04 00:43:50,630 LOG Installing webshop
+2025-05-04 00:43:50,630 DEBUG cd /home/pratik/frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/pratik/frappe-bench/apps/webshop 
+2025-05-04 00:43:54,622 DEBUG bench build --app webshop
+2025-05-04 00:43:54,866 INFO /home/pratik/.local/bin/bench build --app webshop
+2025-05-04 00:43:59,618 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 00:44:00,009 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 00:44:00,009 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-05-04 00:44:00,568 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:44:29,064 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app webshop
+2025-05-04 00:45:07,640 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app webshop
+2025-05-04 00:46:10,801 INFO /home/pratik/.local/bin/bench get-app --branch version-15 payments
+2025-05-04 00:46:12,596 LOG Getting payments
+2025-05-04 00:46:12,596 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git --branch version-15 --depth 1 --origin upstream
+2025-05-04 00:46:14,820 LOG Installing payments
+2025-05-04 00:46:14,821 DEBUG cd /home/pratik/frappe-bench && /home/pratik/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/pratik/frappe-bench/apps/payments 
+2025-05-04 00:46:22,909 DEBUG bench build --app payments
+2025-05-04 00:46:23,134 INFO /home/pratik/.local/bin/bench build --app payments
+2025-05-04 00:46:26,667 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 00:46:27,021 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 00:46:27,022 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-05-04 00:46:27,543 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:46:41,551 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app payments
+2025-05-04 00:47:28,461 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app ecommerce
+2025-05-04 00:47:39,748 INFO /home/pratik/.local/bin/bench --site frappeapp.com install-app webshop
+2025-05-04 00:48:55,557 INFO /home/pratik/.local/bin/bench --site frappeapp.com set-config developer_mode 1
+2025-05-04 00:51:10,088 INFO /home/pratik/.local/bin/bench startbench --site frappeapp.com list-apps
+2025-05-04 00:51:15,061 INFO /home/pratik/.local/bin/bench --site frappeapp.com list-apps
+2025-05-04 00:51:30,419 INFO /home/pratik/.local/bin/bench start
+2025-05-04 00:51:31,061 INFO /home/pratik/.local/bin/bench schedule
+2025-05-04 00:51:31,095 INFO /home/pratik/.local/bin/bench watch
+2025-05-04 00:51:31,115 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-04 00:51:31,226 INFO /home/pratik/.local/bin/bench worker
+2025-05-04 00:54:34,290 INFO /home/pratik/.local/bin/bench build
+2025-05-04 00:55:15,745 INFO /home/pratik/.local/bin/bench clear-cache
+2025-05-04 00:55:17,264 INFO /home/pratik/.local/bin/bench restart
+2025-05-04 00:55:17,751 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 00:55:18,145 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 00:55:18,146 WARNING /home/pratik/.local/bin/bench restart executed with exit code 1
+2025-05-04 00:55:18,818 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:55:22,412 INFO /home/pratik/.local/bin/bench update --build
+2025-05-04 00:55:24,884 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-05-04 00:56:17,587 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:56:17,891 INFO /home/pratik/.local/bin/bench update --patch
+2025-05-04 00:56:20,068 WARNING shallow_clone is set in your bench config.
+However without passing the --reset flag, your repositories will be unshallowed.
+To avoid this, cancel this operation and run `bench update --reset`.
+
+Consider the consequences of `git reset --hard` on your apps before you run that.
+To avoid seeing this warning, set shallow_clone to false in your common_site_config.json
+		
+2025-05-04 00:56:48,675 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 00:56:56,598 INFO /home/pratik/.local/bin/bench start
+2025-05-04 00:56:57,418 INFO /home/pratik/.local/bin/bench watch
+2025-05-04 00:56:57,421 INFO /home/pratik/.local/bin/bench schedule
+2025-05-04 00:56:57,427 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-04 00:56:57,628 INFO /home/pratik/.local/bin/bench worker
+2025-05-04 01:00:39,073 INFO /home/pratik/.local/bin/bench restart
+2025-05-04 01:00:39,453 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-04 01:00:39,828 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-04 01:00:39,829 WARNING /home/pratik/.local/bin/bench restart executed with exit code 1
+2025-05-04 01:00:40,713 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-04 22:09:00,017 INFO /home/pratik/.local/bin/bench start
+2025-05-04 22:09:00,610 INFO /home/pratik/.local/bin/bench schedule
+2025-05-04 22:09:00,642 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-04 22:09:00,648 INFO /home/pratik/.local/bin/bench watch
+2025-05-04 22:09:00,675 INFO /home/pratik/.local/bin/bench worker
+2025-05-05 10:20:27,512 INFO /home/pratik/.local/bin/bench start
+2025-05-05 10:20:27,901 INFO /home/pratik/.local/bin/bench schedule
+2025-05-05 10:20:27,901 INFO /home/pratik/.local/bin/bench worker
+2025-05-05 10:20:27,908 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-05 10:20:27,961 INFO /home/pratik/.local/bin/bench watch
+2025-05-05 12:00:02,227 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-05 18:00:02,867 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-05 18:23:51,041 INFO /home/pratik/.local/bin/bench start
+2025-05-05 18:23:51,771 INFO /home/pratik/.local/bin/bench watch
+2025-05-05 18:23:51,795 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-05 18:23:51,813 INFO /home/pratik/.local/bin/bench worker
+2025-05-05 18:23:51,850 INFO /home/pratik/.local/bin/bench schedule
+2025-05-05 18:33:56,912 INFO /home/pratik/.local/bin/bench restart
+2025-05-05 18:33:57,179 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-05 18:33:57,443 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-05 18:33:57,443 WARNING /home/pratik/.local/bin/bench restart executed with exit code 1
+2025-05-05 18:33:57,807 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-06 10:20:40,219 INFO /home/pratik/.local/bin/bench start
+2025-05-06 10:20:40,793 INFO /home/pratik/.local/bin/bench worker
+2025-05-06 10:20:40,812 INFO /home/pratik/.local/bin/bench watch
+2025-05-06 10:20:40,813 INFO /home/pratik/.local/bin/bench schedule
+2025-05-06 10:20:40,903 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-06 12:00:01,931 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-06 18:00:01,977 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-07 12:00:01,326 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-07 18:00:01,750 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-08 12:00:01,489 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-08 18:00:01,355 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-09 12:00:02,138 INFO /home/pratik/.local/bin/bench --verbose --site all backup
+2025-05-09 13:42:10,343 INFO /home/pratik/.local/bin/bench start
+2025-05-09 13:42:10,724 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 13:42:10,757 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 13:42:10,771 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 13:42:10,803 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 13:43:09,730 INFO /home/pratik/.local/bin/bench start
+2025-05-09 13:43:10,186 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 13:43:10,207 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 13:43:10,245 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 13:43:10,264 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 13:53:05,318 INFO /home/pratik/.local/bin/bench console
+2025-05-09 13:53:26,043 INFO /home/pratik/.local/bin/bench console
+2025-05-09 13:53:58,547 INFO /home/pratik/.local/bin/bench --site frappeapp.com console
+2025-05-09 13:56:23,806 INFO /home/pratik/.local/bin/bench console
+2025-05-09 13:56:31,023 INFO /home/pratik/.local/bin/bench --site frappeapp.com console
+2025-05-09 13:57:47,188 INFO /home/pratik/.local/bin/bench start
+2025-05-09 13:57:47,678 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 13:57:47,696 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 13:57:47,725 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 13:57:47,777 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 14:11:28,671 INFO /home/pratik/.local/bin/bench start
+2025-05-09 14:11:29,207 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 14:11:29,258 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 14:11:29,289 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 14:11:29,306 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 14:21:37,348 INFO /home/pratik/.local/bin/bench --site frappeapp.com console
+2025-05-09 15:08:09,492 INFO /home/pratik/.local/bin/bench --site frappeapp.com console
+2025-05-09 15:08:39,673 INFO /home/pratik/.local/bin/bench start
+2025-05-09 15:08:40,247 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 15:08:40,247 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 15:08:40,285 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 15:08:40,327 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 15:18:38,406 INFO /home/pratik/.local/bin/bench --site frappeapp.com mariadb
+2025-05-09 15:28:58,723 INFO /home/pratik/.local/bin/bench --site frappeapp.com mariadb
+2025-05-09 15:31:52,103 INFO /home/pratik/.local/bin/bench --site frappeapp.com mariadb
+2025-05-09 15:33:45,273 INFO /home/pratik/.local/bin/bench --site frappeapp.com clear-cache
+2025-05-09 15:33:46,872 INFO /home/pratik/.local/bin/bench restart
+2025-05-09 15:33:47,255 DEBUG cd /home/pratik/frappe-bench && supervisorctl restart frappe:
+2025-05-09 15:33:47,603 WARNING cd /home/pratik/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-05-09 15:33:47,603 WARNING /home/pratik/.local/bin/bench restart executed with exit code 1
+2025-05-09 15:33:48,195 INFO A newer version of bench is available: 5.22.9 → 5.24.1
+2025-05-09 15:40:58,141 INFO /home/pratik/.local/bin/bench start
+2025-05-09 15:40:58,675 INFO /home/pratik/.local/bin/bench serve --port 8006
+2025-05-09 15:40:58,735 INFO /home/pratik/.local/bin/bench schedule
+2025-05-09 15:40:58,744 INFO /home/pratik/.local/bin/bench worker
+2025-05-09 15:40:58,806 INFO /home/pratik/.local/bin/bench watch
+2025-05-09 15:52:25,794 INFO /home/pratik/.local/bin/bench --site frappeapp.com console
+2025-05-09 15:53:04,559 INFO /home/pratik/.local/bin/bench --site frappeapp.com clear-cache
+2025-05-09 15:56:02,618 INFO /home/pratik/.local/bin/bench --site frappeapp.com mariadb
+2025-05-09 15:57:16,228 INFO /home/pratik/.local/bin/bench --site frappeapp.com console

@@ -1,0 +1,12 @@
+2025-05-05 16:11:30,514 ERROR frappe New Exception collected in error log
+Site: frappeapp.com
+Form Dict: {'docname': 'ACC-PRQ-2025-00006', 'cmd': 'erpnext.accounts.doctype.payment_request.payment_request.resend_payment_email', 'pdf_generator': 'wkhtmltopdf'}
+2025-05-05 16:25:22,760 ERROR frappe New Exception collected in error log
+Site: frappeapp.com
+Form Dict: {'dn': 'SAL-ORD-2025-00005', 'dt': 'Sales Order', 'submit_doc': '1', 'order_type': 'Shopping Cart', 'cmd': 'erpnext.accounts.doctype.payment_request.payment_request.make_payment_request'}
+2025-05-06 14:53:26,923 ERROR frappe New Exception collected in error log
+Site: frappeapp.com
+Form Dict: {'user': 'suraj@gmail.com', 'cmd': 'frappe.core.doctype.user.user.reset_password'}
+2025-05-09 15:54:51,776 ERROR frappe New Exception collected in error log
+Site: frappeapp.com
+Form Dict: {'cmd': 'frappe.www.login.send_login_link', 'email': 'sanket@gmail.com'}

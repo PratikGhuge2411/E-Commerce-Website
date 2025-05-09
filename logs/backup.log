@@ -1,0 +1,63 @@
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250505_120002-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-05 12:00:04.600338
+Config  : ./frappeapp.com/private/backups/20250505_120002-frappeapp_com-site_config_backup.json 116.0B
+Database: ./frappeapp.com/private/backups/20250505_120002-frappeapp_com-database.sql.gz         879.4KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250505_180003-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-05 18:00:05.529948
+Config  : ./frappeapp.com/private/backups/20250505_180003-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250505_180003-frappeapp_com-database.sql.gz         915.8KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250506_120003-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-06 12:00:06.044546
+Config  : ./frappeapp.com/private/backups/20250506_120003-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250506_120003-frappeapp_com-database.sql.gz         939.4KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250506_180004-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-06 18:00:08.352969
+Config  : ./frappeapp.com/private/backups/20250506_180004-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250506_180004-frappeapp_com-database.sql.gz         963.9KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250507_120002-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-07 12:00:04.218906
+Config  : ./frappeapp.com/private/backups/20250507_120002-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250507_120002-frappeapp_com-database.sql.gz         965.7KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250507_180003-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-07 18:00:05.234445
+Config  : ./frappeapp.com/private/backups/20250507_180003-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250507_180003-frappeapp_com-database.sql.gz         965.7KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250508_120002-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-08 12:00:03.994865
+Config  : ./frappeapp.com/private/backups/20250508_120002-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250508_120002-frappeapp_com-database.sql.gz         965.7KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250508_180002-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-08 18:00:04.267617
+Config  : ./frappeapp.com/private/backups/20250508_180002-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250508_180002-frappeapp_com-database.sql.gz         965.7KiB
+Backup for Site frappeapp.com has been successfully completed
+/bin/sh: 1: /usr/local/bin/bench: not found
+set -o pipefail; /usr/bin/mariadb-dump --user=_f8c76d1e75b87e66 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _f8c76d1e75b87e66 | /usr/bin/gzip >> ./frappeapp.com/private/backups/20250509_120004-frappeapp_com-database.sql.gz
+
+Backup Summary for frappeapp.com at 2025-05-09 12:00:06.560733
+Config  : ./frappeapp.com/private/backups/20250509_120004-frappeapp_com-site_config_backup.json 183.0B
+Database: ./frappeapp.com/private/backups/20250509_120004-frappeapp_com-database.sql.gz         965.7KiB
+Backup for Site frappeapp.com has been successfully completed
